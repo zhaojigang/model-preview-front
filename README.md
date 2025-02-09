@@ -47,7 +47,12 @@ ComfyUI\models\loras        -- 一级目录
 * 模型的使用说明空文件和下载地址空文件会在首次访问模型管理界面的时候自动进行创建，后续新增模型后，只要访问模型管理界面，也会自动创建。
 
 ### 模型管理器启动
-服务端启动：克隆项目，在项目根目录下执行 `mvn clean install`，之后再 target 目录下找到 jar 包。
+#### 第一种方式（一件整合包启动，推荐）
+在 [此处](https://pan.baidu.com/s/1PNgx_8DQ5ECD_JWeoZBbgQ?pwd=pshf) 下载整合包 `model-preview.rar`，解压后，修改 `model-preview.bat` 文件中的 `-DbaseModelPath=` 为你的 ComfyUI\models 路径，然后双击启动即可。本地访问：`http://localhost:5173/`
+#### 第二种方式（手动启动，适用于全平台）
+服务端启动：克隆项目，在项目根目录下执行 `mvn clean install`，之后在 target 目录下找到 jar 包。
 执行 `java -jar jar包`
 
 前端启动：克隆项目，在根目录下执行 `npm run dev`，之后根据执行日志，进行浏览器访问即可
+
+本地访问：`http://localhost:5173/`
