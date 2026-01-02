@@ -95,7 +95,10 @@ const searchKeyword = ref('')
 const modelOptions = [
   { label: 'Checkpoint', value: 'checkpoint' },
   { label: 'DiffusionModel', value: 'diffusionModel' },
-  { label: 'Lora', value: 'lora' }
+  { label: 'Lora', value: 'lora' },
+  { label: 'ControlNet', value: 'controlNet' },
+  { label: 'Upscale', value: 'upscaleModels' },
+  { label: 'VAE', value: 'vae' }
 ]
 
 // 过滤后的模型列表
